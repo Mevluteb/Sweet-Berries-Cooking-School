@@ -2,10 +2,15 @@
     --main-card-color:white;
     --main-accent-color: #FEBD2F;
     --main-par-color: #DCDCDC;
+    --main-but-border-radius: 28px;
 }
 
-a, button {
+a {
     text-decoration: none;
+}
+
+button{
+    border: none;
 }
 
 body{
@@ -13,19 +18,33 @@ body{
     background-color:#F5F3EF;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 100px, 440px, 324px, 324px;
 }
 
 header{
+    padding: 30px 80px 30px 80px;
     grid-column: span 3;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+}
+
+nav a{
+    margin-right: 20px;
+    color: black;
+}
+
+.button-2{
+    border-radius: var(--main-but-border-radius);
+    background-color: black;
+    color: white;
+    height: 48px;
+    width: 130px;
 }
 
 .introContainer{
+    padding: 30px 80px 30px 80px;
+    height: 440px;
     grid-column: span 3;
     display: flex;
     flex-direction: row;
@@ -33,6 +52,7 @@ header{
 }
 
 .cardContainer{
+    padding: 30px 80px 30px 80px;
     grid-column: span 3;
     grid-row: span 2;
     display: flex;
