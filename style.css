@@ -1,0 +1,59 @@
+:root{
+    --main-card-color:white;
+    --main-accent-color: #FEBD2F;
+    --main-par-color: #DCDCDC;
+}
+
+a, button {
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    background-color:#F5F3EF;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px, 440px, 324px, 324px;
+}
+
+header{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+
+.introContainer{
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardContainer{
+    grid-column: span 3;
+    grid-row: span 2;
+    display: flex;
+    
+}
+
+.cardExplore{
+    grid-column: span 1;
+
+}
+
+.cardCourses{
+    grid-column: span 1;
+
+}
+
+footer {
+    height: 80px;
+    background-color: var(--main-accent-color);
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
