@@ -1,7 +1,8 @@
 :root{
     --main-card-color:white;
     --main-accent-color: #FEBD2F;
-    --main-par-color: #DCDCDC;
+    --main-par-color: #646464;
+    --main-but1-color: #DCDCDC;
     --main-but-border-radius: 28px;
 }
 
@@ -9,15 +10,21 @@ a {
     text-decoration: none;
 }
 
+p {
+    color: var(--main-par-color);
+}
+
 button{
     border: none;
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color:#F5F3EF;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 600px auto 100px;
 }
 
 header{
@@ -43,7 +50,7 @@ nav a{
 }
 
 .introContainer{
-    padding: 30px 80px 30px 80px;
+    padding: 30px 80px 0px 80px;
     height: 440px;
     grid-column: span 3;
     display: flex;
@@ -51,26 +58,67 @@ nav a{
     justify-content: space-between;
 }
 
+.headingInfo h1{
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.headingInfo p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .cardContainer{
-    padding: 30px 80px 30px 80px;
     grid-column: span 3;
-    grid-row: span 2;
-    display: flex;
-    
+    padding: 0px 80px 100px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
 }
 
 .cardExplore{
     grid-column: span 1;
-
+    background-color: var(--main-accent-color);
+    border-radius: 40px;
+    height: 324px;
+    font-size: 30px;
+    padding: 10%;
 }
 
 .cardCourses{
     grid-column: span 1;
+    height: 324px;
+    border-radius: 40px;
+    height: 324px;
+    padding: 10%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.cardCourses h3{
+    font-family: roboto serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cardCourses img{
+    position: absolute;
+    height: 80px;
+    left: 800px;
+    top: 0px;
+}
+
+.button-1{
+    border-radius: var(--main-but-border-radius);
+    height: 48px;
+    width: 130px;
+    background-color: white;
+    border: 1px solid var(--main-but1-color);
 }
 
 footer {
-    height: 80px;
     background-color: var(--main-accent-color);
     grid-column: span 3;
     display: flex;
