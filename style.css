@@ -89,7 +89,6 @@ nav a{
     grid-column: span 1;
     height: 324px;
     border-radius: 40px;
-    height: 324px;
     padding: 10%;
     background-color: white;
     display: flex;
@@ -125,4 +124,65 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+    body{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px auto auto 100px;
+    }
+
+    header{
+        padding: 30px 40px 30px 40px;
+        grid-column: span 2;
+    }
+
+    .introContainer{
+        padding: 30px 40px 30px 40px;
+        grid-column: span 2;
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .headingInfo h1{
+        font-size: 60px;
+    }
+
+    .cardContainer{
+        grid-column: span 2;
+        padding: 0px 40px 50px 40px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+
+    .cardExplore{
+        height: 271px;
+        font-size: 23px;
+    }
+
+    .cardCourses{
+        height: 271px;
+    }
+
+    .cardCourses h3{
+        font-size: 20px;
+    }
+
+    .cardCourses img{
+        width: 70px;
+        height: 70px;
+        position: relative;
+        left: 170px;
+        top: -120px;
+    }
+
+    .button-1{
+        height: 40px;
+    }
+
+    .cardCourses p{
+        font-size: 14px;
+    }
 }
