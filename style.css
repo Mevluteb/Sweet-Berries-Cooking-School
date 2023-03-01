@@ -18,6 +18,10 @@ button{
     border: none;
 }
 
+.threeLine{
+    display: none;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -184,5 +188,78 @@ footer {
 
     .cardCourses p{
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .threeLine{
+        display: block;
+        position: relative;
+        left: 100px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header{
+        padding: 10px 40px 10px 40px;
+        justify-content: center;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    .button-2{
+        display: none;
+    }
+
+    .introContainer{
+        padding: 10px 40px 10px 40px;
+        height: auto;
+    }
+
+    .headingInfo h1{
+        font-size: 35px;
+    }
+
+    .headingInfo p{
+        font-size: 18px;
+    }
+
+    .cardContainer{
+        padding: 10px 40px 10px 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardExplore{
+        height: 100px;
+        font-size: 15px;
+        padding: 10px 90px 10px 30px;
+    }
+
+    .cardCourses{
+        height: 260px;
+    }
+
+    .cardCourses h3{
+        font-family: roboto serif;
+        font-size: 20px;
+    }
+
+    .cardCourses img{
+        width: 60px;
+        height: 60px;
+        position: relative;
+        left: 230px;
+        top: -140px;
+    }
+
+    footer {
+        height: 100px;
+        margin-top: 50px;
     }
 }
