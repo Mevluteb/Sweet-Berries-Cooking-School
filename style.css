@@ -104,10 +104,11 @@ nav a{
 }
 
 .cardCourses img{
-    position: absolute;
-    height: 80px;
-    left: 800px;
-    top: 0px;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 200px;
+    top: -160px;
 }
 
 .button-1{
