@@ -22,7 +22,10 @@ button{
     display: none;
 }
 
+/* Grid template areas haven’t been used to display items at different positions in different viewports.
+This was a requirement in the rubric. */
 body{
+    /* We have 2 fonts in the Figma file but you have only used one. */
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color:#F5F3EF;
@@ -106,6 +109,8 @@ nav a{
     font-weight: 700;
 }
 
+/* Even-though it looks like you achieved placing the logo above the card, it is not the proper way. You should give the icon a position of absolute, this will bring the icon out of the document flow.
+Then you need to give the card a position of relative in order for the icon to be placed in relative to the card. */
 .cardCourses img{
     width: 70px;
     height: 70px;
@@ -131,7 +136,10 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-
+/* You have some duplicated code in your media queries.
+You should just mention the changes you make in each class.
+For example, in the media query for the 800px break point, in the body you still have display: grid; there.
+You should only mention what is being changed in all media queries. */
     body{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -192,7 +200,7 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-
+/* Good job on displaying the hamburger menu on mobile devices. It’s not a functional hamburger menu. */
     .threeLine{
         display: block;
         position: relative;
